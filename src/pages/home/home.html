@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Events</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar (ionBlur)="fetch($event)"></ion-searchbar>
+  <ion-list>
+    <button ion-item *ngFor="let event of events" (click)="eventSelected(event)">
+      <h2>{{ event.title }}</h2>
+      <p>@ {{ event.place }}</p>
+    </button>
+  </ion-list>
+</ion-content>
