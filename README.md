@@ -1,0 +1,2 @@
+Angular Advent Calendar 2016 サンプルです。
+Ionicを使い、ConnpassのAPIからイベント情報を取得して表示するアプリです。
